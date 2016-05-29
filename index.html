@@ -1,66 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" href="stylesheets/as3.css" type="text/css" media="screen" />
+  <script src="javascripts/as3.js"></script>
+  <script src="javascripts/top-level-domain-names.js"></script>
+</head>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Jobsearch.GitHub.io : ">
+<body onload="addOption_list();">
+  <header></header>
+  <nav>
+  </nav>
+  <div id="content">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <form id="signup" name="formSignUp" action="https://formpost.azurewebsites.net/home/test" method="post" onsubmit="return formValidation()" autocomplete="on">
+      <div id="jobhead"><h1>JobSearch</h1><h4>.com</h4></div>
+      <div class="clear">
+        <h2>Create Your Account</h2>
+      </div>
+      <p id="reqInfo"><abbr title="required">* Required information</abbr></p>
 
-    <title>Jobsearch.GitHub.io</title>
-  </head>
+      <div class="container">
+        <!--start of Basic Information container(1)-->
+        <section>
+          <h3>Basic Information</h3>
+          <div class="tableContainer">
+            <div>
+              <label class="apply" for="email" title="Email">Email <abbr title="required">*</abbr></label>
+              <input type="email" name="Email" id="email" autofocus required onchange="validateEmail()" />
+              <div id="errEmail"></div>
+            </div>
+            <div>
+              <label class="apply" for="password" title="Password">Password <abbr title="required">*</abbr></label>
+              <input type="password" name="Password" id="password" onchange="validatePassword()" required />
+              <div id="errPassword"></div>
+            </div>
+            <div>
+              <label class="apply" for="repassword" title="RePassword">Retype Password <abbr title="required">*</abbr></label>
+              <input type="password" name="Retype Password" id="repassword" onchange="validateRePassword()" required />
+              <div id="errRePassword"></div>
+            </div>
+            <div>
+              <label class="apply" for="fname" title="Fname">First Name <abbr title="required">*</abbr></label>
+              <input type="text" name="First Name" id="fname" onchange="validateFirstName()" required />
+              <div id="errfname"></div>
+            </div>
+            <div>
+              <label class="apply" for="lname" title="Lname">Last Name <abbr title="required">*</abbr></label>
+              <input type="text" name="Last Name" id="lname" onchange="validateLastName()" required />
+              <div id="errlname"></div>
+            </div>
+            <div>
+              <label class="apply" for="phone" title="Telephone">Phone Number <abbr title="required">*</abbr></label>
+              <input type="tel" name="Phone No." id="phone" placeholder="999-999-9999" onchange="validatePhone()" required />
+              <div id="errPhone"></div>
+            </div>
+            <div>
+              <label class="apply" for="address" title="Address">Address <abbr title="required">*</abbr></label>
+              <input type="text" name="Address" id="address" required />
+            </div>
+            <div>
+              <label class="apply" for="city" title="City">City <abbr title="required">*</abbr></label>
+              <input type="text" name="City" id="city" required />
+            </div>
+            <div>
+              <label class="apply" for="prov" title="Province">Province <abbr title="required">*</abbr></label>
+              <input type="text" name="Province" id="prov" list="provinces" required />
+              <datalist id="provinces">
+                <option value="Alberta">AB
+                <option value=" British Columbia">BC
+                <option value="Manitoba">MN
+                <option value="New Brunswick">NB
+                <option value="Newfoundland">NF
+                <option value="Nova Scotia">NS
+                <option value="Ontario">ON
+                <option value="Prince Edward Island">PE
+                <option value="Quebec">QU
+                <option value="Saskatchewan">SA
+                <option value="Northwest Territories">NT
+                <option value="Nunavut">NA
+                <option value=" Yukon">YU
+              </datalist>
+            </div>
+            <div>
+              <label class="apply" for="countrySelect" title="Country">Country <abbr title="required">*</abbr></label>
+              <select name="country_names" id="countrySelect" size="1">
+                <option value=" "> Country List</option>               
+              </select>
+            </div>
+            <!--end of Basic Information container(1)-->
+          </div>
+        </section>
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Lee-Xavier/JobSearch.github.io">View on GitHub</a>
 
-          <h1 id="project_title">Jobsearch.GitHub.io</h1>
-          <h2 id="project_tagline"></h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Lee-Xavier/JobSearch.github.io/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Lee-Xavier/JobSearch.github.io/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+        <section>
+          <h3>Education</h3>
+          <!--start of Education container(1)-->
+          <div class="tableContainer">
+            <div>
+              <label class="apply" for="school" title="School">School <abbr title="required">*</abbr></label>
+              <input type="text" name="School" id="school" required />
+            </div>
+            <div>
+              <label class="apply" for="program" title="Program">Program <abbr title="required">*</abbr></label>
+              <input type="text" name="Program" id="program" required />
+            </div>
+            <div id="edlvl">
+              <label class="apply" for="Edulvl" title="Date">Education Level <abbr title="required">*</abbr></label>
+              <select required name="Education Level" id="Edulvl" size="1">
+                <option value="">-select-</option>
+                <option value="Technical Diploma">Technical Diploma</option>
+                <option value="College Diploma">College Diploma</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <fieldset>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+              <legend>Education Status <abbr title="CHANGE TO CHECKED WHEN CLICKED!">*</abbr></legend>
+              <span class="rdo"><input type="radio" name="Education_Status" id="eStatus1" value="Graduated" onchange="validateEdStatus()" required /><label for="eStatus1">Graduated</label></span>
+              <span class="rdo">
+                <input type="radio" name="Education_Status" id="eStatus2" value="Currently enrolled" onchange="validateEdStatus()" /><label for="eStatus2">Currently enrolled</label>
+              </span>
+              <span class="rdo"><input type="radio" name="Education_Status" id="eStatus3" value="Did not graduate" onchange="validateEdStatus()" /><label for="eStatus3">Did not graduate</label></span>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+            </fieldset>
+            <div id="errEdStatus"></div>
+            <div>
+              <label class="apply" for="date" title="Date">Graduation Date</label>
+              <input type="date" name="Graduation Date" id="date" />
+            </div>
+            <!--end of Basic Information container(1)-->
+          </div>
+        </section>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+        <section>
+         <h3>Work Experience<button type="button" id="addWorkExperience" onclick="createWorkExp()">+</button></h3>
+          <!--start of Work Experience container(1)-->
+          <div class="tableContainer">
+            <div>
+              <label class="apply" for="employer" title="Employer's name">Employer:</label>
+              <input type="text" name="Employer" id="employer" />
+            </div>
+            <div>
+              <label class="apply" for="jtitle" title="JTitle">Job Title:</label>
+              <input type="text" name="Job Title" id="jtitle" />
+            </div>
+            <div>
+              <label class="apply" for="textArea" title="text can be added">Job Duty:</label>
+              <textarea name="Job Duty" id="textArea"></textarea>
+            </div>
+            <div>
+              <label class="apply" for="gdate" title="Date">Worked Year:</label>
+              <input type="number" name="Worked Year" id="gdate" min="1" max="20" />
+            </div>
+            <div>
+              <label class="apply" for="wHistory" title="Work History Field">Work History:</label>
+              <input type="text" name="Work History" id="wHistory" /><button type='button' id="addWorkHistory" onclick="addHistory(addHistoryHere)">+</button>
+              <div id="addHistoryHere"></div>
+            </div>
+           
+            <!--end of Work Experience container(1)-->
+            <div id="workExp"></div>
+          </div>    
+        </section>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <div id="addWorkExperienceHere"></div>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+        <section>
+          <h3>Attachments</h3>
+          <!--start of Attachments container(1)-->
+          <div class="tableContainer">
+            <div id="attachments">
+              <label class="apply" for="attc" title="Attachment">Attachments:</label>
+              <input type="file" name="Attachments" id="attc" multiple>         
+            </div>
+            <!--end of Attachments container(1)-->
+          </div>
+        </section>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
+        <section>
+          <div>
+            <button type='reset' id="rst" onclick="clearErrors()">Reset</button>
+            <button type='submit' id="apl">Apply</button>
+          </div>
+        </section>
+        
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
+        <div id="mod">
+          <section style="text-align:center;">
+            <script type="text/javascript">
+              //<![CDATA[
+              var dt = new Date(document.lastModified);   // Get document last modified date
+              document.write('This page was last updated on ' + dt.toLocaleString())
+              //]]>
+            </script>
+          </section>
+        </div>
+      </div>
+    </form>
+    <!--end of content area-->
+  </div>
         <p class="copyright">Jobsearch.GitHub.io maintained by <a href="https://github.com/Lee-Xavier">Lee-Xavier</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
