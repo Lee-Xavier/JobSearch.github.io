@@ -14,7 +14,7 @@ var i;
 
 // **************************************************************** 
 // ** Function Name : formValidation()
-// ** Called from   : assign3.html
+// ** Called from   : index.html
 // ****************************************************************
 // ** Function Description
 // ** ====================
@@ -40,7 +40,7 @@ function formValidation() {
 // ****************************************************************
 // ** Function Name : validateFirstName()                        **
 // **                                                            **
-// ** Called from   :  assign3.html                              **
+// ** Called from   :  index.html                              **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -103,7 +103,7 @@ function validateFirstName() {
 // ****************************************************************
 // ** Function Name : validateLastName()                         **
 // **                                                            **
-// ** Called from   :  assign3.html                              **
+// ** Called from   :  index.html                              **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -164,7 +164,7 @@ function validateLastName() {
 // ****************************************************************
 // ** Function Name : validatePassword()                         **
 // **                                                            **
-// ** Called from   : assign3.html                               **
+// ** Called from   : index.html                               **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -234,7 +234,7 @@ function validatePassword() {
 // ****************************************************************
 // ** Function Name : validateRePassword()                       **
 // **                                                            **
-// ** Called from   :  assign3.html                              **
+// ** Called from   :  index.html                              **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -317,7 +317,7 @@ function validateRePassword() {
 // ****************************************************************
 // ** Function Name : validateEdStatus()                         **
 // **                                                            **
-// ** Called from   :  assign3.html                              **
+// ** Called from   :  index.html                              **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -359,7 +359,7 @@ function validateEdStatus() {
 // ****************************************************************
 // ** Function Name : addOption_list()                           **
 // **                                                            **
-// ** Called from   : assign3.html                               **
+// ** Called from   : index.html                               **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -390,7 +390,7 @@ function addOption_list() {
 // ****************************************************************
 // ** Function Name : clearErrors()                              **
 // **                                                            **
-// ** Called from   : assign3.html                               **
+// ** Called from   : index.html                               **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -413,7 +413,7 @@ function clearErrors() {
 // ****************************************************************
 // ** Function Name : validatePhone()                            **
 // **                                                            **
-// ** Called from   :  assign3.html                              **
+// ** Called from   :  index.html                              **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -504,7 +504,7 @@ function validatePhone() {
 // ****************************************************************
 // ** Function Name : validateEmail()                            **
 // **                                                            **
-// ** Called from   :  assign3.html                              **
+// ** Called from   :  index.html                              **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -554,7 +554,7 @@ function validateEmail() {
 // ****************************************************************
 // ** Function Name : createWorkExp()                            **
 // **                                                            **
-// ** Called from   :  assign3.html                              **
+// ** Called from   :  index.html                              **
 // ****************************************************************
 // ** Function Description                                       **
 // ** ====================                                       **
@@ -807,7 +807,7 @@ function createWorkHistory(newDiv) {
 // ****************************************************************
 // ** Function Name : addHistory()                               **
 // **                                                            **
-// ** Called from   : assign3.html / createWorkHistory()         **
+// ** Called from   : index.html / createWorkHistory()         **
 // **                                                            **
 // ****************************************************************
 // ** Function Description                                       **
