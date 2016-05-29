@@ -1,0 +1,231 @@
+form {
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  font-family: arial;
+  font-weight: 300;
+  color: #4A4A4C;
+}
+
+.container {
+  padding: 0em 1em;
+  width: 570px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.tableContainer {
+  background-color: #f6f6f6;
+  margin: 0 auto;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+}
+
+#jobhead {
+  height: 40px;
+  width: 590px;
+  display: inline-block;
+  background-color: #CF2900;
+  margin-top: 0px;
+  padding: 5px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+
+edlvl {
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+h1 {
+  text-shadow: 1px 0px 0px white;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  color: white;
+  text-align: left;
+  float: left;
+}
+
+h2 {
+  margin-left: 13px;
+  margin-top: 15px;
+  text-shadow: 1px 1px 0px #4A4A4C;
+}
+
+h4 {
+  text-align: right;
+  float: left;
+  background-color: #CF2900;
+  color: white;
+  margin-top: 26px;
+}
+
+#reqInfo {
+  margin-left: 13px;
+  font-size: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+h3 {
+  background-color: #DFDFDF;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+fieldset {
+  margin-top: 10px;
+  margin-left: 170px;
+  width: 20px;
+  background-color: white;
+}
+
+label.apply {
+  display: inline-block;
+  white-space: nowrap;
+  width: 100px;
+  text-align: right;
+  margin-right: 1px;
+  margin-left: 40px;
+  padding: 10px;
+}
+
+input, textarea, select {
+  font: 1em sans-serif;
+  width: 250px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  box-shadow: 2px 2px 2px #a3a3a3;
+  border-radius: 3px;
+  border: 1px outset #a3a3a3;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  padding-left: 5px;
+}
+
+  input:focus, textarea:focus, select:focus {
+    border: 2px solid red;
+    box-shadow: 1px 1px 0px red;
+    border-collapse: collapse;
+  }
+
+#addWorkExperience {
+  margin-top: 2px;
+  margin-right: 25px;
+  float: right;
+  width: 15px;
+  padding: 0px;
+  border: 2px solid #505050;
+  font-weight: 700;
+  color: #505050;
+  height: 15px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#addWorkHistory {
+  margin-left: 15px;
+  border-radius: 4px;
+  width: 17px;
+  padding: 0px;
+  border: 2px solid dimgrey;
+  font-weight: 700;
+  color: #505050;
+  height: 17px;
+  background-color: white;
+}
+
+.rdo input {
+  width: 13px;
+  background-color: green;
+  box-shadow: 0px 0px 0px #a3a3a3;
+}
+
+.rdo label {
+  text-align: left;
+  padding: 2px;
+}
+
+select {
+  margin-left: 170px;
+}
+
+button#apl, button#rst {
+  padding-left: 10px;
+  background-color: #CF2900;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px 20px;
+}
+
+#rst {
+  margin-left: 200px;
+}
+
+#apl {
+  margin-left: 15px;
+}
+
+#attachments {
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+abbr {
+  color: #B82500;
+  text-shadow: 0px 0px 1px #ff0000;
+}
+
+#mod {
+  margin-top: 25px;
+  background-color: #f6f6f6;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+select {
+  margin-left: 10px;
+}
+
+fieldset {
+  width: 150px;
+  padding: 2px 45px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #a3a3a3;
+  margin-bottom: 8px;
+}
+
+#errEmail, #errPassword, #errRePassword, #errfname, #errlname, #errPhone, #errEdStatus {
+  color: grey;
+  margin-left: 100px;
+  font-size: smaller;
+}
+
+.redCross {
+  color: red;
+  text-shadow: 1px 1px 0px #ff0000;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 5px;
+}
